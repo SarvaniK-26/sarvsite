@@ -30,6 +30,7 @@ nav { /* for the nav bar at the top */
   font-family: 'Roboto Mono', monospace;
   transition: color .3s ease;
   cursor: pointer;
+  
 }
 
 .nav-links a:hover { /* changes color of words when mouse hovers */
@@ -39,21 +40,32 @@ nav { /* for the nav bar at the top */
 .introduction-container { /* encompasses all of introduction info */
   margin-top: 150px; 
   text-align: left;
-  margin-left: 20px;
-  
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h2.introduction { 
+  margin-bottom: 1px;
   font-weight: 100;
   color: #1097B5;
   font-family: 'Roboto Mono', monospace;
 }
 
 h1.name { 
+  margin-top: 14px;
+  margin-bottom: 1px;
   font-weight: 100;
   color: #FFFFF0;
   font-family: 'Nunito'
+}
 
+h3.details { 
+  margin-top: 14px;
+  font-weight: 100;
+  color: #FFFFF0;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .content {
@@ -63,14 +75,37 @@ h1.name {
 
 }
 
-.element {
-  padding: 20px;
-  margin-top: 20px;
-  background-color: #000000;
+.aboutintro-container {
+  margin-top: 500px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
 }
 
-.element h2 {
-  color: #FFFFF0;
-  font-family: 'Roboto Mono', monospace;
-  margin-bottom: 10px;
+.aboutme-vert-container{
+  gap: 10px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction:column;
+  margin-top: 100px; 
+  text-align: left;
+  margin-left: 60px;
+  /* justify-content: space-between; */
+}
+
+.aboutme-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutme-pic{
+  width: 320px; 
+  height: 320px; 
+  border-radius: 100%;
+  object-fit: cover;
+  margin-top: 70px;
+  margin-right: 600px;
 }
