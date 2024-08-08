@@ -1,7 +1,7 @@
 .curved-rectangle{
     border-radius: 20px;
-    background-color: rgb(197, 197, 35);
+    background-color: beige;
     padding: 40px;
     width: 166px;
-    height: 150px;
+    height: 2;
 }

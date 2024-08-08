@@ -47,6 +47,7 @@ nav { /* for the nav bar at the top */
 }
 
 h2.introduction { 
+  margin-top: 10px;
   margin-bottom: 1px;
   font-weight: 100;
   color: #1097B5;
@@ -83,6 +84,34 @@ h3.details {
   flex-direction:row;
 }
 
+
+.experience-container {
+  margin-top: 500px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
+.passion-container {
+  margin-top: 500px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
+.project-container {
+  margin-top: 500px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
 .aboutme-vert-container{
   gap: 10px;
   margin-right: 100px;
@@ -101,6 +130,13 @@ h3.details {
   align-items: center;
 }
 
+.aboutme-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .aboutme-pic{
   width: 320px; 
   height: 320px; 
@@ -108,4 +144,57 @@ h3.details {
   object-fit: cover;
   margin-top: 70px;
   margin-right: 600px;
+}
+
+.experience-container{
+  margin-top: 250px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
+.project-container{
+  margin-top: 250px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
+.passion-container{
+  margin-top: 250px; 
+  text-align: left;
+  margin-left: 60px;
+  display: flex;
+  flex-direction:row;
+}
+
+
+.passions{
+  gap: 30px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction:column;
+  margin-top: 100px; 
+  text-align: left;
+  margin-left: 60px;
+  
+}
+
+.passions-row{
+  margin-right: 100px;
+  display: flex;
+  flex-direction:row;
+  text-align: left;
+}
+
+
+.thdpic{
+  width: 400px; 
+  height: 200px; 
+  border-radius: 20%;
+  object-fit: cover;
 }
