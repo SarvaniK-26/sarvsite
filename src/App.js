@@ -4,6 +4,7 @@ import './App.css';
 import DetailsTile from './components/DetailsTile';
 import picture from '/Users/sarvk/Desktop/sarvsite/src/pictures/alaskamainpic.jpg'; 
 import thdpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/thdpic.png'; 
+import githubpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/github.png'; 
 
 
 function App() {
@@ -24,9 +25,9 @@ function App() {
         <h3 className='details'>trying to learn, travel, and have a good time </h3>
       </div>
 
-      <Element name="aboutintro-container" className="aboutintro-container">
+      <div name="aboutintro-container" className="aboutintro-container">
         <h2 className="introduction">a little about me :)</h2>
-      </Element>
+      </div>
 
       <div className='aboutme-div'>
         <div className="aboutme-vert-container">
@@ -37,7 +38,7 @@ function App() {
             I recently graduated from University of Illinois at Chicago where I earned a B.S in C.S.</h3>
 
             <h3 className='details'>
-            I’ll be continuing my studies at the University of California at San Diego studying Computer Science and specializing in Artificial Intelligence. </h3>
+            I am continuing my studies at the University of California at San Diego studying Computer Science and specializing in Artificial Intelligence. </h3>
         </div>
         <img src={picture} className='aboutme-pic' alt="About Me" />
       </div>
@@ -48,7 +49,42 @@ function App() {
 
       <div className="project-container">
         <h2 className="introduction">some cool things i tried to build</h2>
+          
+          <div className='project-row'> 
+            <div className='project-header'>
+              <h3 className='project-details'>Movie Rating Sentiment Analysis</h3>
+              <a href="https://github.com/SarvaniK-26/Movie-Rating-Sentiment-Analysis">
+              <img src={githubpic} className='githubpic' alt="githublink"/>
+              </a>
+            </div>
+            <p className="project-desc">
+              Built a sentiment analysis tool that classifies movie reviews as positive or negative using machine learning models.
+            </p>
+          </div>
+
+          <div className="project-row"> 
+            <div className="project-header">
+              <h3 className="project-details">Vital Sense</h3>
+              <a href="https://github.com/SarvaniK-26/VitalSense">
+                <img src={githubpic} className="githubpic" alt="githublink"/>
+              </a>
+            </div>
+            <p className="project-desc">
+              Built a random forest classifier to predict heart disease, achieving an accuracy of 82%.              </p>
+          </div>
+
+          <div className="project-row"> 
+            <div className="project-header">
+              <h3 className="project-details">Flight Price Spotter</h3>
+              <a href="https://github.com/SarvaniK-26/FlightPriceSpotter">
+                <img src={githubpic} className="githubpic" alt="githublink"/>
+              </a>
+            </div>
+            <p className="project-desc">
+              As I was trying to find cheap flight tickets to move in for grad school in San Diego I realized I could create a script that sends me emails when tickets hit a certain price. This helped make the process more simple               </p>
+          </div>
       </div>
+      
        
       <div className="passion-container">
         <h2 className="introduction">what i’m up to when i’m not staring at my laptop coding</h2>
@@ -58,7 +94,16 @@ function App() {
         <div className = 'passions-row'>
           <h3 className='details'>The Hidden Dream</h3>
         </div>
-          <img src={thdpic} className='thdpic' alt="THD" />
+        <div className = 'passions-row'>
+          <img src={thdpic} className='thdpic' alt="THD"/>
+
+          <div className = 'thdtext'>
+            <h3 className='thdpassion'>After years of advocating for the hundreds of thousands of visa immigrants who were facing deportation at the age of 21 (just like I was) I found others who were in the same situation in 2020.</h3>
+            <h3 className='thdpassion'>Our shared passion became The Hidden Dream and four years later we have been able to provide our community with mental health help, survival guide, and scholarship fund.</h3>
+          </div>
+
+        </div>
+          
         </div>
     </div>
 

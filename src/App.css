@@ -65,7 +65,9 @@ h1.name {
 h3.details { 
   margin-top: 14px;
   font-weight: 100;
+  width: 100%;
   color: #FFFFF0;
+  display: inline-block;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -84,7 +86,6 @@ h3.details {
   flex-direction:row;
 }
 
-
 .experience-container {
   margin-top: 500px; 
   text-align: left;
@@ -95,7 +96,7 @@ h3.details {
 
 
 .passion-container {
-  margin-top: 500px; 
+  margin-top: 500px;
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -108,7 +109,7 @@ h3.details {
   text-align: left;
   margin-left: 60px;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
 }
 
 
@@ -151,16 +152,7 @@ h3.details {
   text-align: left;
   margin-left: 60px;
   display: flex;
-  flex-direction:row;
-}
-
-
-.project-container{
-  margin-top: 250px; 
-  text-align: left;
-  margin-left: 60px;
-  display: flex;
-  flex-direction:row;
+  flex-direction:column;
 }
 
 
@@ -169,7 +161,7 @@ h3.details {
   text-align: left;
   margin-left: 60px;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
 }
 
 
@@ -188,13 +180,95 @@ h3.details {
   margin-right: 100px;
   display: flex;
   flex-direction:row;
-  text-align: left;
+  align-items: stretch;
+  vertical-align: top;
+
 }
 
 
 .thdpic{
-  width: 400px; 
-  height: 200px; 
+  width: 450px; 
+  height: 250px; 
   border-radius: 20%;
   object-fit: cover;
+}
+
+.thdtext{
+  gap: 30px;
+  /* margin-right: 100px; */
+  display: flex;
+  flex-direction:column;
+  /* margin-top: 100px;  */
+  text-align: justify;
+  margin-left: 60px;
+  
+}
+
+
+h3.thdpassion { 
+  margin-top: 14px;
+  font-weight: 100;
+  color: #FFFFF0;
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+}
+
+
+.githubpic{
+  width: 30px; 
+  height: 30px; 
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.project-row {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 0.5rem;
+}
+
+.project-details{
+  margin-top: 14px;
+  font-weight: 100;
+  color: #FFFFF0;
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-container .introduction {
+  margin-bottom: 5rem;
+}
+
+.project-row {
+  display: flex; 
+  flex-direction: column; 
+  margin-bottom: 1.5rem; 
+  align-items: flex-start;
+}
+
+.project-header {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 1rem; 
+}
+
+.project-details {
+  font-weight: 100;
+  color: #FFFFF0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.githubpic {
+  width: 30px; 
+  height: 30px; 
+  object-fit: cover;
+}
+
+.project-desc {
+  margin-top: 1rem; 
+  color: #FFFFF0; 
+  font-family: 'Roboto Mono', monospace;
+  text-align: left; 
 }
