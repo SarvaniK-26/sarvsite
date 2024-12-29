@@ -5,7 +5,10 @@ import DetailsTile from './components/DetailsTile';
 import picture from '/Users/sarvk/Desktop/sarvsite/src/pictures/alaskamainpic.jpg'; 
 import thdpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/thdpic.png'; 
 import githubpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/github.png'; 
-
+import { motion } from "motion/react"
+import teenvogue from '/Users/sarvk/Desktop/sarvsite/src/pictures/teenvogue.png'; 
+import stl from '/Users/sarvk/Desktop/sarvsite/src/pictures/stl.png'; 
+import lifting from  '/Users/sarvk/Desktop/sarvsite/src/pictures/lifting.jpg'; 
 
 function App() {
   return (
@@ -13,7 +16,7 @@ function App() {
       <nav>
         <div className="nav-links">
           <Link to="aboutintro-container" smooth={true} duration={500} offset={-100}>about</Link>
-          <Link to="experience-container" smooth={true} duration={500} offset={-100}>experience</Link>
+          <Link to="experience-container" smooth={true} duration={500} offset={-100}>experiences</Link>
           <Link to="project-container" smooth={true} duration={500} offset={-100}>projects</Link>
           <Link to="passion-container" smooth={true} duration={500} offset={-100}>passions</Link>
         </div>
@@ -25,13 +28,15 @@ function App() {
       <div className="introduction-container">
         <h2 className="introduction">Hi, my name is</h2>
         <h1 className='name'>Sarvani Kunapareddy</h1>
-        <h3 className='details'>trying to learn, travel, and have a good time </h3>
+        <h3 className='details'>learning, traveling, watching movies, and having a good time </h3>
       </div>
 
       <div name="aboutintro-container" className="aboutintro-container">
         <h2 className="introduction">a little about me :)</h2>
       </div>
 
+
+      {/* ABOUT ME */}
       <div className='aboutme-div'>
         <div className="aboutme-vert-container">
             <h3 className='details'>
@@ -46,10 +51,14 @@ function App() {
         <img src={picture} className='aboutme-pic' alt="About Me" />
       </div>
 
+
+      {/* EXPERIENCES */}
       <div className="experience-container">
         <h2 className="introduction">experiences</h2>
       </div>
 
+
+      {/* PROJECTS */}
       <div className="project-container">
         <h2 className="introduction">some cool things i tried to build</h2>
           
@@ -89,26 +98,61 @@ function App() {
       </div>
 
        
+
+      {/* PASSIONS */}
       <div className="passion-container">
         <h2 className="introduction">what i’m up to when i’m not staring at my laptop coding</h2>
       </div>
 
+
       <div className='passions'>
+
+        {/* first passion - THD */}
         <div className = 'passions-row'>
           <h3 className='details'>The Hidden Dream</h3>
         </div>
+
         <div className = 'passions-row'>
-          <img src={thdpic} className='thdpic' alt="THD"/>
+        <a href="https://thehiddendream.org">
+            <img src={thdpic} className="thdpic" />
+          </a>
 
           <div className = 'thdtext'>
             <h3 className='thdpassion'>After years of advocating for the hundreds of thousands of visa immigrants who were facing deportation at the age of 21 (just like I was) I found others who were in the same situation in 2020.</h3>
             <h3 className='thdpassion'>Our shared passion became The Hidden Dream and four years later we have been able to provide our community with mental health help, survival guide, and scholarship fund.</h3>
           </div>
+        </div>
+
+        <div className="link-container">
+          <a href="https://www.teenvogue.com/story/21-under-21-2020">
+            <img src={teenvogue} className="teenvogue" />
+          </a>
+          <a href="https://www.stltoday.com/opinion/column/kunapareddy-i-ve-lived-in-missouri-most-of-my-life-but-i-cant-become-an/article_233fbff9-1811-504f-a797-c0215eef6c64.html">
+            <img src={stl} className="stl" />
+          </a>
+        </div>
+
+
+        {/* second passion - lifting */}
+        <div className = 'passions-row'>
+          <h3 className='details'>Lifting</h3>
+        </div>
+
+        <div className = 'passions-row'>
+        <img src={lifting} className="lifting" />
+        
+
+          <div className = 'liftingtext'>
+            <h3 className='thdpassion'>My parents have always been super huge on staying active, so growing up I constantly tried new gym classes (yoga, zumba, pilates etc.). I attempted multiple CrossFit workouts with my dad (was not for me) but it made me really appreciate lifitng.</h3>
+            <h3 className='thdpassion'>Down the line it taught me how to be confident in my own skin, deal with problems, and ofc flex in every mirror.</h3>
+            <h3 className='thdpassion'>Thank you to my dad for introducing me to lifting forever grateful :)</h3>
+          </div>
+        </div>
+        
+
+      </div>
 
         </div>
-          
-        </div>
-    </div>
 
   );
 }

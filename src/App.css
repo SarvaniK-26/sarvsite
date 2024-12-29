@@ -85,8 +85,11 @@ h1.name {
 }
 
 h3.details { 
+  justify-content: center;
+  align-items: center;
   margin-top: 14px;
   font-weight: 100;
+  max-width: 450px;
   width: 100%;
   color: #FFFFF0;
   display: inline-block;
@@ -143,7 +146,6 @@ h3.details {
   margin-top: 100px; 
   text-align: left;
   margin-left: 60px;
-  /* justify-content: space-between; */
 }
 
 .aboutme-div{
@@ -209,21 +211,26 @@ h3.details {
 
 
 .thdpic{
-  width: 450px; 
-  height: 250px; 
+  width: 500px; 
+  height: 300px; 
   border-radius: 20%;
   object-fit: cover;
 }
 
 .thdtext{
-  gap: 30px;
-  /* margin-right: 100px; */
+  max-width: 450px;
   display: flex;
   flex-direction:column;
-  /* margin-top: 100px;  */
-  text-align: justify;
   margin-left: 60px;
-  
+  text-align: center; 
+}
+
+.liftingtext{
+  max-width: 750px;
+  display: flex;
+  flex-direction:column;
+  margin-left: 60px;
+  text-align: center; 
 }
 
 
@@ -290,7 +297,36 @@ h3.thdpassion {
 
 .project-desc {
   margin-top: 1rem; 
+  max-width: 800px;
   color: #FFFFF0; 
   font-family: 'Roboto Mono', monospace;
   text-align: left; 
+}
+
+
+.link-container {
+  display: flex; 
+  align-items: center; 
+  gap: 50px;
+}
+
+.teenvogue,
+.stl {
+  width: 200px; 
+  height: auto; 
+  transition: transform .2s ease; 
+}
+
+.lifting{
+  width: 300px; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+
+.teenvogue:hover,
+.stl:hover
+,.thdpic:hover{
+  transform: scale(1.1); 
 }
