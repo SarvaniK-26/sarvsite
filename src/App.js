@@ -17,6 +17,9 @@ function App() {
           <Link to="project-container" smooth={true} duration={500} offset={-100}>projects</Link>
           <Link to="passion-container" smooth={true} duration={500} offset={-100}>passions</Link>
         </div>
+        <div className="nav-button">
+          <button className='button' onClick={() => window.open('https://docs.google.com/document/d/1OoISfoLCXqhwHxKGlH-wyANbt7YZpIftSCtx_dOpFtg/edit?usp=sharing', '_blank')}>resume</button>
+        </div>
       </nav>
 
       <div className="introduction-container">
@@ -84,7 +87,7 @@ function App() {
               As I was trying to find cheap flight tickets to move in for grad school in San Diego I realized I could create a script that sends me emails when tickets hit a certain price. This helped make the process more simple               </p>
           </div>
       </div>
-      
+
        
       <div className="passion-container">
         <h2 className="introduction">what i’m up to when i’m not staring at my laptop coding</h2>
