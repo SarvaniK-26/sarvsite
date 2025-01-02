@@ -5,6 +5,8 @@
   flex-direction: column;
 }
 
+
+
 nav { /* for the nav bar at the top */
   position: fixed;
   top: 0;
@@ -66,6 +68,7 @@ nav { /* for the nav bar at the top */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 h2.introduction { 
@@ -76,6 +79,14 @@ h2.introduction {
   font-family: 'Roboto Mono', monospace;
 }
 
+.intro-row{
+  flex-direction: row;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+
+}
 h1.name { 
   margin-top: 14px;
   margin-bottom: 1px;
@@ -130,7 +141,7 @@ h3.details {
 
 
 .project-container {
-  margin-top: 100px; 
+  margin-top: 200px; 
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -139,37 +150,52 @@ h3.details {
 
 
 .aboutme-vert-container{
-  gap: 10px;
-  margin-right: 100px;
-  display: flex;
-  flex-direction:column;
-  margin-top: 100px; 
-  text-align: left;
+  flex: 1; 
+  margin-right: 20px;
   margin-left: 60px;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
 }
 
 .aboutme-div{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.aboutme-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 
 .aboutme-pic{
+  flex-shrink:0;
   width: 320px; 
   height: 320px; 
-  border-radius: 100%;
-  object-fit: cover;
-  margin-top: 70px;
-  margin-right: 600px;
+  border-radius: 50%;
+  object-fit: cover;  
+  margin: 0;
+  align-items: center;
+  margin-right: 500px;
 }
+
+@media (max-width: 768px) {
+  .aboutme-div {
+    flex-direction: row; 
+    align-items: left; 
+  }
+
+  .aboutme-vert-container {
+    margin: 0 20px; 
+    text-align: left; 
+  }
+
+  .aboutme-pic {
+    margin: 20px 0; 
+    width: 200px;
+    height: 200px;
+  }
+}
+
 
 .experience-container{
   margin-top: 250px; 

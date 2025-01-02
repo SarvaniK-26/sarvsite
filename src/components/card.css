@@ -1,7 +1,7 @@
 /* Internships.css */
 .internships-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
     height: 100%; 
     padding: 1rem;

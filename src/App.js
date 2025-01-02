@@ -50,7 +50,8 @@ function App() {
             <h3 className='details'>
             I am continuing my studies at the University of California at San Diego studying Computer Science and specializing in Artificial Intelligence. </h3>
         </div>
-        <img src={picture} className='aboutme-pic' alt="About Me" />
+        <img src={picture} className="aboutme-pic" />
+    
       </div>
 
 
