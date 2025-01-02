@@ -2,19 +2,14 @@ import React from 'react';
 import { Link, Element } from 'react-scroll';
 import './App.css';
 import DetailsTile from './components/DetailsTile';
-import picture from '/Users/sarvk/Desktop/sarvsite/src/pictures/alaskamainpic.jpg'; 
-import thdpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/thdpic.png'; 
-import githubpic from '/Users/sarvk/Desktop/sarvsite/src/pictures/github.png'; 
+import picture from '../src/pictures/alaskamainpic.jpg'; 
+import thdpic from '../src/pictures/thdpic.png'; 
+import githubpic from '../src/pictures/github.png'; 
 import { motion } from "motion/react"
-import teenvogue from '/Users/sarvk/Desktop/sarvsite/src/pictures/teenvogue.png'; 
-import stl from '/Users/sarvk/Desktop/sarvsite/src/pictures/stl.png'; 
-import lifting from  '/Users/sarvk/Desktop/sarvsite/src/pictures/lifting.jpg'; 
+import teenvogue from '../src/pictures/teenvogue.png'; 
+import stl from '../src/pictures/stl.png'; 
+import lifting from  '../src/pictures/lifting.jpg'; 
 
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Internships from './components/card';
 
 function App() {
