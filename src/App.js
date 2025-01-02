@@ -10,6 +10,13 @@ import teenvogue from '/Users/sarvk/Desktop/sarvsite/src/pictures/teenvogue.png'
 import stl from '/Users/sarvk/Desktop/sarvsite/src/pictures/stl.png'; 
 import lifting from  '/Users/sarvk/Desktop/sarvsite/src/pictures/lifting.jpg'; 
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Internships from './components/card';
+
 function App() {
   return (
     <div className="App">
@@ -58,6 +65,12 @@ function App() {
       </div>
 
 
+  {/* INTERNSHIPS */}
+      <Element name="internships-container" className="internships-container">
+        <Internships />
+      </Element>
+  
+      
       {/* PROJECTS */}
       <div className="project-container">
         <h2 className="introduction">some cool things i tried to build</h2>
@@ -109,7 +122,7 @@ function App() {
 
         {/* first passion - THD */}
         <div className = 'passions-row'>
-          <h3 className='details'>The Hidden Dream</h3>
+          <h3 className='details-passion'>The Hidden Dream</h3>
         </div>
 
         <div className = 'passions-row'>
@@ -135,7 +148,7 @@ function App() {
 
         {/* second passion - lifting */}
         <div className = 'passions-row'>
-          <h3 className='details'>Lifting</h3>
+          <h3 className='details-passion'>Lifting</h3>
         </div>
 
         <div className = 'passions-row'>

@@ -97,14 +97,14 @@ h3.details {
 }
 
 .content {
-  margin-top: 100px; 
+  margin-top: 200px; 
   text-align: left;
   margin-left: 10px;
 
 }
 
 .aboutintro-container {
-  margin-top: 500px; 
+  margin-top: 600px; 
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -112,7 +112,7 @@ h3.details {
 }
 
 .experience-container {
-  margin-top: 500px; 
+  margin-top: 200px; 
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -121,7 +121,7 @@ h3.details {
 
 
 .passion-container {
-  margin-top: 500px;
+  margin-top: 200px;
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -130,7 +130,7 @@ h3.details {
 
 
 .project-container {
-  margin-top: 500px; 
+  margin-top: 100px; 
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -179,9 +179,8 @@ h3.details {
   flex-direction:column;
 }
 
-
 .passion-container{
-  margin-top: 250px; 
+  margin-top: 200px; 
   text-align: left;
   margin-left: 60px;
   display: flex;
@@ -262,7 +261,21 @@ h3.thdpassion {
   font-weight: 100;
   color: #FFFFF0;
   display: inline-block;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Nunito';
+}
+
+
+h3.details-passion{ 
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  font-weight: 100;
+  max-width: 450px;
+  width: 100%;
+  color: #FFFFF0;
+  display: inline-block;
+  font-family: 'Nunito';
+  font-size: 30px;
 }
 
 .project-container .introduction {
@@ -281,12 +294,6 @@ h3.thdpassion {
   flex-direction: row; 
   align-items: center; 
   gap: 1rem; 
-}
-
-.project-details {
-  font-weight: 100;
-  color: #FFFFF0;
-  font-family: 'Roboto Mono', monospace;
 }
 
 .githubpic {
