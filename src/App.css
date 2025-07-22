@@ -72,6 +72,7 @@ nav { /* for the nav bar at the top */
 }
 
 h2.introduction { 
+  font-size: 30px;
   margin-top: 10px;
   margin-bottom: 1px;
   font-weight: 100;
@@ -89,6 +90,7 @@ h2.introduction {
 }
 h1.name { 
   margin-top: 14px;
+  font-size: 50px;
   margin-bottom: 1px;
   font-weight: 100;
   color: #FFFFF0;
@@ -96,6 +98,7 @@ h1.name {
 }
 
 h3.details { 
+  font-size: 20px;
   justify-content: center;
   align-items: center;
   margin-top: 14px;
@@ -362,4 +365,16 @@ h3.details-passion{
 .stl:hover
 ,.thdpic:hover{
   transform: scale(1.1); 
+}
+
+.movie-link {
+  color: #1097B5;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.movie-link:hover {
+  color: #095f72; 
+  text-decoration: none;
 }
