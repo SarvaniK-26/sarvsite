@@ -39,27 +39,28 @@ const internships = [
 function Internships() {
   return (
     <div className="internships-container">
-      <div className="scrollable-internship-cards">
-      {internships.map((internship, index) => (
+      <div className="horizontal-scroll-container">
+        {internships.map((internship, index) => (
           <motion.div
             key={index}
             className="internship-card"
-            whileHover={{ scale: 1.01}}
-            whileTap={{ scale: 1.2}}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 30 }}
-            transition={{ duration: 0.3, delay: index * 0.001 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
           >
-            <h3>{internship.role}</h3>
-            <p><span style={{ color: '#1097B5' }}><strong>Company:</strong></span> {internship.company}</p>
-            <p><span style={{ color: '#1097B5' }}><strong>Duration:</strong></span> {internship.duration}</p>
-            <p>{internship.descriptionpart1}</p>
-            <p>{internship.descriptionpart2}</p>
+            <h3 className="role">{internship.role}</h3>
+            <h4 className="company">{internship.company}</h4>
+            <p className="duration">{internship.duration}</p>
+            <p className="description">{internship.descriptionpart1}</p>
+            {internship.descriptionpart2 && <p className="description">{internship.descriptionpart2}</p>}
           </motion.div>
         ))}
       </div>
     </div>
   );
 }
+
 
 export default Internships;

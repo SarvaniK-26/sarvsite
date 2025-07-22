@@ -3,11 +3,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center; /* center all direct children horizontally */
 }
 
-
-
-nav { /* for the nav bar at the top */
+/* NAV stays fixed and right aligned */
+nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -15,15 +15,15 @@ nav { /* for the nav bar at the top */
   background: #000000;
   display: flex;
   justify-content: flex-end;
-  padding: 20px 50px; 
+  padding: 20px 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
-.nav-links { /* for the words in the nav bar */ 
+.nav-links {
   margin-top: 20px;
   display: flex;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .nav-links a {
@@ -32,15 +32,14 @@ nav { /* for the nav bar at the top */
   font-family: 'Roboto Mono', monospace;
   transition: color .3s ease;
   cursor: pointer;
-  
 }
 
-.nav-button { /* container for the button */
+.nav-button {
   margin-top: 16px;
   margin-left: 2rem;
 }
 
-.nav-button button { /* styles for the button */
+.nav-button button {
   background-color: #000000;
   border-color: #1097B5;
   color: #FFFFF0;
@@ -51,27 +50,42 @@ nav { /* for the nav bar at the top */
   cursor: pointer;
 }
 
-
-.nav-button button:hover { /* hover effect for the button */
+.nav-button button:hover {
   background-color: #7399a0;
   transform: scale(1.05);
 }
 
-.nav-links a:hover { /* changes color of words when mouse hovers */
+.nav-links a:hover {
   color: #1097B5;
 }
 
-.introduction-container { /* encompasses all of introduction info */
-  margin-top: 150px; 
-  text-align: left;
-  margin-left: 60px;
+/* Center main containers horizontally, max-width for readability */
+.aboutintro-container,
+.experience-container,
+.passion-container,
+.project-container,
+.aboutme-vert-container,
+.passions {
+  scroll-margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  text-align: center;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
+  align-items: center;
 }
 
-h2.introduction { 
+.introduction-container {
+  margin-top: 150px;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 500px;
+}
+
+h2.introduction {
+  text-align:center;
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 1px;
@@ -80,212 +94,162 @@ h2.introduction {
   font-family: 'Roboto Mono', monospace;
 }
 
-.intro-row{
-  flex-direction: row;
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
-
-}
-h1.name { 
+h1.name {
   margin-top: 14px;
   font-size: 50px;
   margin-bottom: 1px;
   font-weight: 100;
   color: #FFFFF0;
-  font-family: 'Nunito'
+  font-family: 'Nunito';
+  text-align: center;
 }
 
-h3.details { 
+h3.details {
   font-size: 20px;
-  justify-content: center;
-  align-items: center;
   margin-top: 14px;
   font-weight: 100;
-  max-width: 450px;
   width: 100%;
   color: #FFFFF0;
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
 }
 
-.content {
-  margin-top: 200px; 
-  text-align: left;
-  margin-left: 10px;
-
-}
-
-.aboutintro-container {
-  margin-top: 600px; 
-  text-align: left;
-  margin-left: 60px;
+/* About me section - center and align items */
+.aboutme-div {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.experience-container {
-  margin-top: 200px; 
-  text-align: left;
-  margin-left: 60px;
-  display: flex;
-  flex-direction:row;
-}
-
-
-.passion-container {
-  margin-top: 200px;
-  text-align: left;
-  margin-left: 60px;
-  display: flex;
-  flex-direction:row;
-}
-
-
-.project-container {
-  margin-top: 200px; 
-  text-align: left;
-  margin-left: 60px;
-  display: flex;
-  flex-direction:column;
-}
-
-
-.aboutme-vert-container{
-  flex: 1; 
-  margin-right: 20px;
-  margin-left: 60px;
-  text-align: left;
+.aboutme-vert-container {
+  flex: 1;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
   flex-direction: column;
   display: flex;
 }
 
-.aboutme-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-
-
-.aboutme-pic{
-  flex-shrink:0;
-  width: 320px; 
-  height: 320px; 
+/* Center and remove large margins on picture */
+.aboutme-pic {
+  flex-shrink: 0;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
-  object-fit: cover;  
-  margin: 0;
+  object-fit: cover;
+  margin: 0 auto;
   align-items: center;
-  margin-right: 500px;
 }
 
 @media (max-width: 768px) {
   .aboutme-div {
-    flex-direction: row; 
-    align-items: left; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .aboutme-vert-container {
-    margin: 0 20px; 
-    text-align: left; 
+    margin: 0 20px;
+    text-align: center;
   }
 
   .aboutme-pic {
-    margin: 20px 0; 
+    margin: 20px auto;
     width: 200px;
     height: 200px;
   }
 }
 
-
-.experience-container{
-  margin-top: 250px; 
-  text-align: left;
-  margin-left: 60px;
+/* Experience and passion containers centered */
+.experience-container,
+.passion-container {
+  margin-top: 200px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: center;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  align-items: center;
 }
 
-.passion-container{
-  margin-top: 200px; 
-  text-align: left;
-  margin-left: 60px;
-  display: flex;
-  flex-direction:column;
-}
-
-
-.passions{
+/* Passions container styling */
+.passions {
   gap: 30px;
-  margin-right: 100px;
+  margin-right: 0 !important;
   display: flex;
-  flex-direction:column;
-  margin-top: 100px; 
-  text-align: left;
-  margin-left: 60px;
-  
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 0 !important;
 }
 
-.passions-row{
-  margin-right: 100px;
+.passions-row {
+  margin-right: 0 !important;
   display: flex;
-  flex-direction:row;
-  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   vertical-align: top;
-
+  gap: 1.5rem;
 }
 
-
-.thdpic{
-  width: 500px; 
-  height: 300px; 
+/* Passion images */
+.thdpic {
+  width: 500px;
+  height: 300px;
   border-radius: 20%;
   object-fit: cover;
+  margin: 0 auto;
 }
 
-.thdtext{
+.thdtext {
   max-width: 450px;
   display: flex;
-  flex-direction:column;
-  margin-left: 60px;
-  text-align: center; 
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
-.liftingtext{
+.liftingtext {
   max-width: 750px;
   display: flex;
-  flex-direction:column;
-  margin-left: 60px;
-  text-align: center; 
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
-
-h3.thdpassion { 
+h3.thdpassion {
   margin-top: 14px;
   font-weight: 100;
   color: #FFFFF0;
   font-family: 'Roboto Mono', monospace;
   display: inline-block;
+  text-align: center;
 }
 
-
-.githubpic{
-  width: 30px; 
-  height: 30px; 
+.githubpic {
+  width: 30px;
+  height: 30px;
   border-radius: 20%;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .project-row {
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.project-details{
+.project-details {
+  text-align: center;
   margin-top: 14px;
   font-weight: 100;
   color: #FFFFF0;
@@ -293,8 +257,7 @@ h3.thdpassion {
   font-family: 'Nunito';
 }
 
-
-h3.details-passion{ 
+h3.details-passion {
   justify-content: center;
   align-items: center;
   margin-top: 14px;
@@ -305,76 +268,76 @@ h3.details-passion{
   display: inline-block;
   font-family: 'Nunito';
   font-size: 30px;
+  text-align: center;
 }
 
 .project-container .introduction {
   margin-bottom: 5rem;
 }
 
-.project-row {
-  display: flex; 
-  flex-direction: column; 
-  margin-bottom: 1.5rem; 
-  align-items: flex-start;
-}
-
 .project-header {
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  gap: 1rem; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .githubpic {
-  width: 30px; 
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   object-fit: cover;
+  margin: 0;
 }
 
 .project-desc {
-  margin-top: 1rem; 
+  margin-top: 1rem;
   max-width: 800px;
-  color: #FFFFF0; 
+  color: #FFFFF0;
   font-family: 'Roboto Mono', monospace;
-  text-align: left; 
+  text-align: center;
 }
 
-
 .link-container {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
 .teenvogue,
 .stl {
-  width: 200px; 
-  height: auto; 
-  transition: transform .2s ease; 
+  width: 200px;
+  height: auto;
+  transition: transform .2s ease;
+  margin: 0 auto;
 }
 
-.lifting{
-  width: 300px; 
-  height: 400px; 
+.lifting {
+  width: 300px;
+  height: 400px;
   object-fit: cover;
   border-radius: 20%;
+  margin: 0 auto;
 }
 
-
 .teenvogue:hover,
-.stl:hover
-,.thdpic:hover{
-  transform: scale(1.1); 
+.stl:hover,
+.thdpic:hover {
+  transform: scale(1.1);
 }
 
 .movie-link {
   color: #1097B5;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .movie-link:hover {
-  color: #095f72; 
+  color: #095f72;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }

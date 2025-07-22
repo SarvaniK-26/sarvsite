@@ -1,38 +1,66 @@
-/* Internships.css */
 .internships-container {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    height: 100%; 
-    padding: 1rem;
-  }
+  padding: 2rem 0; 
+  background-color: #000000;
+  width: 100vw; 
+  overflow-x: hidden;
+  color: #e0e0e0;
+}
 
-  .scrollable-internship-cards {
-    display: flex;
-    flex-direction: column; 
-    overflow-y: auto; 
-    max-height: 80vh; 
-    padding: 1rem;
-    gap: 1rem; 
-  }
-  .internship-card {
-    background-color: #000000; 
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0px 4px 6px #1097B5;
-  }
-  .internship-card h3 {
-    margin: 0;
-    font-size: 24px;
-    font-family: 'Nunito';
-    color: #FFFFF0;
-  }
-  
-  .internship-card p {
-    margin: 0.5rem 0;
-    color: #FFFFF0;
-    font-size: 12px;
-    font-family: 'Roboto Mono', monospace;
-  }
-  
-  
+.horizontal-scroll-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.internship-card {
+  flex: 0 0 320px;
+  background-color: #000000; 
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(16, 151, 181, 0.6); 
+  padding: 1.5rem 2rem;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  color: #FFFFF0; 
+}
+
+.internship-card:hover {
+  box-shadow: 0 12px 32px rgba(16, 151, 181, 0.9);
+}
+
+.role {
+  font-size: 1.3rem;
+  color: #FFFFF0;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+
+.company {
+  font-size: 1.05rem;
+  color: #1097B5; 
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #FFFFF0; /* lighter gray */
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.description {
+  font-size: 1rem;
+  color: #FFFFF0; /* soft white */
+  line-height: 1.5;
+  font-family: 'Roboto Mono', monospace;
+}
