@@ -1,6 +1,6 @@
 .internships-container {
   padding: 2rem 0; 
-  background-color: #000000;
+  background-color: #FAF9F6;
   width: 100vw; 
   overflow-x: hidden;
   color: #e0e0e0;
@@ -21,9 +21,9 @@
 
 .internship-card {
   flex: 0 0 320px;
-  background-color: #000000; 
+  background-color: #FAF9F6; 
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(16, 151, 181, 0.6); 
+  box-shadow: 0 8px 20px #6B0F1A; 
   padding: 1.5rem 2rem;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
@@ -31,12 +31,12 @@
 }
 
 .internship-card:hover {
-  box-shadow: 0 12px 32px rgba(16, 151, 181, 0.9);
+  box-shadow: 0 12px 32px #4c040d; 
 }
 
 .role {
   font-size: 1.3rem;
-  color: #FFFFF0;
+  color: #6B0F1A;
   margin-bottom: 0.25rem;
   font-weight: 600;
   font-family: 'Nunito', sans-serif;
@@ -44,7 +44,7 @@
 
 .company {
   font-size: 1.05rem;
-  color: #1097B5; 
+  color: #6B0F1A; 
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-family: 'Nunito', sans-serif;
@@ -52,7 +52,7 @@
 
 .duration {
   font-size: 0.9rem;
-  color: #FFFFF0; /* lighter gray */
+  color: #6B0F1A;
   margin-bottom: 1rem;
   font-style: italic;
   font-family: 'Roboto Mono', monospace;
@@ -60,7 +60,7 @@
 
 .description {
   font-size: 1rem;
-  color: #FFFFF0; /* soft white */
+  color: #6B0F1A;
   line-height: 1.5;
   font-family: 'Roboto Mono', monospace;
 }
