@@ -1,0 +1,108 @@
+.blog-page {
+    max-width: 900px;
+    margin: 150px auto 50px auto; 
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blog-title {
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #6B0F1A;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .blog-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .blog-card {
+    background-color: #FAF9F6;
+    border: 1.5px solid #6B0F1A;
+    border-radius: 20px;
+    padding: 20px 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post-title {
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    color: #6B0F1A;
+    margin-bottom: 8px;
+  }
+  
+  .blog-date {
+    font-size: 16px;
+    color: #6B0F1A;
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+  
+  .blog-excerpt {
+    font-size: 18px;
+    color: #6B0F1A;
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  /* Button for Read More */
+  .blog-card .button {
+    background-color: #FAF9F6;
+    border: 1.5px solid #6B0F1A;
+    color: #6B0F1A;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 6px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .blog-card .button:hover {
+    background-color: #e6cacd;
+    transform: scale(1.05);
+  }
+  
+  /* Individual blog post page */
+  .blog-post-page {
+    max-width: 800px;
+    margin: 150px auto 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title for single post */
+  .blog-post-page .blog-post-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .blog-post-page .blog-date {
+    font-size: 16px;
+    color: #6B0F1A;
+    opacity: 0.7;
+    margin-bottom: 30px;
+  }
+  
+  .blog-post-page .blog-content {
+    font-size: 23px;
+    font-family: 'Roboto Mono', monospace;
+    color: #6B0F1A;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
