@@ -6,8 +6,8 @@ import "./Blog.css";
 const blogPosts = [
   {
     id: 1,
-    title: "My First Blog Post",
-    date: "August 17, 2025",
+    title: "Helloooooo, welcome in :)",
+    date: "August 18, 2025",
     excerpt:
       "Truly just want to journal the things I learn about so I can improve my writing and retaining skills :)",
     file: "post1.md", 
@@ -34,6 +34,7 @@ export default function BlogPage() {
       <div className="blog-list">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-card">
+            <p className="blog-post-title">{post.title}</p>
             <p className="blog-date">{post.date}</p>
             <p className="blog-excerpt">{post.excerpt}</p>
             <Link to={`/blog/${post.file}`}>
