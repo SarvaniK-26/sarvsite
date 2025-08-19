@@ -44,7 +44,7 @@ function App() {
         <h2 className="introduction">Hi, my name is</h2>
         <h1 className='name'>Sarvani Kunapareddy</h1>
 
-        <h3 className="details">learning, <a href="https://app.beliapp.com/lists/naanlovesbiriyani?_height=982&_width=1512&_branch_match_id=1411135868526996732&utm_medium=my_profile_link&_branch_referrer=H4sIAAAAAAAAAw3FQQqAIBAAwN94TBSCCqRH9ABZa9UFUVkl6dLbay4Te69tk9JhIqh1Oov8kxkgp3Jjc8T0QKbdDrp6NGpWWtiIFGI366LFy%2BiRmXKwjstoyOYAD0wfNQVmzloAAAA%3D" 
+        <h3 className="details">learning, <a href="https://app.beliapp.com/lists/sarvserves?_height=982&_width=1512&_branch_match_id=1411135868526996732&utm_medium=my_profile_link&_branch_referrer=H4sIAAAAAAAAAw3FQQqAIBAAwN94TBSCCqRH9ABZa9UFUVkl6dLbay4Te69tk9JhIqh1Oov8kxkgp3Jjc8T0QKbdDrp6NGpWWtiIFGI366LFy%2BiRmXKwjstoyOYAD0wfNQVmzloAAAA%3D" 
           target="_blank" 
           rel="noopener noreferrer"
           className="movie-link">trying new foods,</a> traveling, and

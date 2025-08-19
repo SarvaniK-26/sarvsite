@@ -1,18 +1,38 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import "./Blog.css";
 
-export default function BlogPostPage({ blogPosts }) {
-  const { id } = useParams(); 
-  const post = blogPosts.find((p) => p.id === parseInt(id));
+export default function BlogPostPage() {
+  const { file } = useParams();
+  const [content, setContent] = useState("");
 
-  if (!post) return <p>Post not found.</p>;
+  useEffect(() => {
+    import(`./blogs/${file}`)
+      .then((res) => fetch(res.default))
+      .then((r) => r.text())
+      .then((text) => setContent(text));
+  }, [file]);
+
+  if (!content) return <p>Loading...</p>;
+
 
   return (
     <div className="blog-post-page">
-      <h1 className="blog-post-title">{post.title}</h1>
-      <p className="blog-date">{post.date}</p>
-      <p className="blog-content">{post.content}</p>
+
+      <div className="top-nav">
+        <Link to="/">
+          <button className="button">Return to Home</button>
+        </Link>
+      </div>
+
+      <div className="blog-content">
+        <ReactMarkdown>{content}</ReactMarkdown>
+      </div>
+
+      <Link to="/blog">
+        <button className="button">Return to More Blogs</button>
+      </Link>
     </div>
   );
 }
