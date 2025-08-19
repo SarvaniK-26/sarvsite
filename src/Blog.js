@@ -9,7 +9,7 @@ const blogPosts = [
     title: "Helloooooo, welcome in :)",
     date: "August 18, 2025",
     excerpt:
-      "Truly just want to journal the things I learn about so I can improve my writing and retaining skills :)",
+      "Truly just want to journal the things I learn about so I can improve my writing and retaining skills!",
     file: "post1.md", 
   },
   // {
