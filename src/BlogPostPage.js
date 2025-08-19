@@ -22,7 +22,7 @@ export default function BlogPostPage() {
 
       <div className="top-nav">
         <Link to="/">
-          <button className="button">Return to Home</button>
+          <button className="button">Home</button>
         </Link>
       </div>
 
@@ -31,7 +31,7 @@ export default function BlogPostPage() {
       </div>
 
       <Link to="/blog">
-        <button className="button">Return to More Blogs</button>
+        <button className="button">More Blogs</button>
       </Link>
     </div>
   );
