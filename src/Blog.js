@@ -5,6 +5,13 @@ import "./Blog.css";
 // List your Markdown blog posts here
 const blogPosts = [
   {
+    id: 3,
+    title: "Red Teaming Findings about GPT-OSS-20B ",
+    date: "August 28, 2025",
+    excerpt: "Worked on a cool project where I felt like a detective! ",
+    file: "post3.md",
+  }, 
+  {
     id: 2,
     title: "AI...pls stop trusting it so much",
     date: "August 24, 2025",
