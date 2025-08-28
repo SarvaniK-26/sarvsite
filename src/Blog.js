@@ -5,20 +5,20 @@ import "./Blog.css";
 // List your Markdown blog posts here
 const blogPosts = [
   {
+    id: 2,
+    title: "AI...pls stop trusting it so much",
+    date: "August 24, 2025",
+    excerpt: "Read some cool papers about AI faithfulness + plausability",
+    file: "post2.md",
+  }, 
+  {
     id: 1,
     title: "Helloooooo, welcome in :)",
     date: "August 18, 2025",
     excerpt:
       "Truly just want to journal the things I learn about so I can improve my writing and retaining skills!",
     file: "post1.md", 
-  },
-  // {
-  //   id: 2,
-  //   title: "My Second Blog Post",
-  //   date: "August 16, 2025",
-  //   excerpt: "Another post about interesting learnings.",
-  //   file: "post2.md",
-  // },
+  }
 ];
 
 export default function BlogPage() {
