@@ -4,9 +4,15 @@ import './card.css'; // Add your styles here
 
 const internships = [
   {
+    role: "Data Science Intern",
+    company: "Caterpillar",
+    duration: "June 2025 - Present",
+    descriptionpart1: "Developing customer personas for 2.8M+ users by applying hierarchical clustering to online journey data, uncovering distinct behavioral segments to enhance user experience and enable personalized recommendations."
+  },
+  {
     role: "Machine Learning Research",
     company: "UCSD School of Medicine Carter Lab",
-    duration: "November 2024 - Present",
+    duration: "January 2025 - May 2025",
     descriptionpart1: "Applying machine learning to analyze DNA sequences and predict methylation regions."
   },
   {
