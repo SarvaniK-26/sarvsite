@@ -8,6 +8,7 @@ import githubpic from '../src/pictures/github.png';
 import { motion } from "motion/react";
 import teenvogue from '../src/pictures/teenvogue.png'; 
 import stl from '../src/pictures/stl.png'; 
+import kaggle from '../src/pictures/kaggle.webp'; 
 import { Link as RouterLink } from 'react-router-dom';
 import lifting from  '../src/pictures/lifting.jpg'; 
 
@@ -93,6 +94,20 @@ function App() {
 
         <div className='project-row'> 
             <div className='project-header'>
+              <h3 className='project-details'>Systematic Evasion: A Data-Driven Red-Team of gpt-oss-20b
+              </h3>
+              <a href="https://www.kaggle.com/sarv03">
+              <img src={kaggle} className='githubpic' alt="githublink"/>
+              </a>
+            </div>
+            <p className="project-desc">
+            Conducted large-scale red-teaming of an open-source LLM, uncovering systemic vulnerabilities.
+            </p>
+          </div>
+
+
+        <div className='project-row'> 
+            <div className='project-header'>
               <h3 className='project-details'>NBA Trade Analysis</h3>
               <a href="https://github.com/SarvaniK-26/NBATrade">
               <img src={githubpic} className='githubpic' alt="githublink"/>
@@ -115,17 +130,7 @@ function App() {
             </p>
           </div>
 
-          <div className="project-row"> 
-            <div className="project-header">
-              <h3 className="project-details">Vital Sense</h3>
-              <a href="https://github.com/SarvaniK-26/VitalSense">
-                <img src={githubpic} className="githubpic" alt="githublink"/>
-              </a>
-            </div>
-            <p className="project-desc">
-              Built a random forest classifier to predict heart disease, achieving an accuracy of 82%.
-            </p>
-          </div>
+        
 
           <div className="project-row"> 
             <div className="project-header">
