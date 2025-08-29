@@ -2,7 +2,7 @@
 
 August 28, 2025
 
-At the start of August, I found out that Kaggle was hosting an interesting challenge with OpenAI — the Red Teaming Challenge. Like every other nerd interested in this kind of work, I texted a few friends from grad school who might also want to join. Of course, we ended up starting just a few days before the deadline (who doesn’t procrastinate?).
+At the start of August, I found out that Kaggle was hosting an interesting challenge with OpenAI, the Red Teaming Challenge. Like every other nerd interested in this kind of work, I texted a few friends from grad school who might also want to join. Of course, we ended up starting just a few days before the deadline (who doesn’t procrastinate?).
 
 Red teaming is the practice of deliberately probing a system for edge-case misbehavior before those vulnerabilities show up in the real world.
 
